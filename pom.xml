@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.ericsson.oss</groupId>
+		<artifactId>integration</artifactId>
+		<version>1.0.110</version>
+	</parent>
+
+	<groupId>com.ericsson.oss.bsim</groupId>
+	<artifactId>bsim-taf-project</artifactId>
+	<version>1.0.1302-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<properties>
+		<allure.version>1.4.8</allure.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<target.java.version>1.7</target.java.version>
+		<!-- -->
+		<groovy.version>2.1.9</groovy.version>
+		<groovy-eclipse-compiler.version>2.8.0-01</groovy-eclipse-compiler.version>
+		<groovy-eclipse-batch.version>2.1.5-03</groovy-eclipse-batch.version>
+		<plexus-compiler-api.version>2.2</plexus-compiler-api.version>
+		<!-- -->
+		<taf_version>2.29.30</taf_version>
+		<taf_oss_operators_version>2.29.30.1.5</taf_oss_operators_version>
+		<!-- -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+		<cds_pmd_ruleset>https://arm1s11-eiffel004.eiffel.gic.ericsson.se:8443/nexus/service/local/repositories/3pptools/content/com/ericsson/cds/CDS_pmd_ruleset_jse/1.0/CDS_pmd_ruleset_jse-1.0.xml</cds_pmd_ruleset>
+	</properties>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>com.ericsson.cifwk.taf</groupId>
+					<artifactId>taf-maven-plugin</artifactId>
+					<version>${taf_version}</version>
+					<executions>
+						<execution>
+							<goals>
+								<goal>clean</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+				<plugin>
+					<groupId>com.ericsson.cifwk.taf</groupId>
+					<artifactId>taf-allure-maven-plugin</artifactId>
+					<version>${taf_version}</version>
+				</plugin>
+				<plugin>
+					<groupId>com.ericsson.cifwk.taf</groupId>
+					<artifactId>taf-allure-old-maven-plugin</artifactId>
+					<version>${taf_version}</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+		<plugins>
+			<plugin>
+				<groupId>com.ericsson.cifwk.taf</groupId>
+				<artifactId>taf-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<artifactId>maven-pmd-plugin</artifactId>
+				<version>3.1</version> <!-- Overriding managed version to get new rulesets -->
+				<configuration>
+					<rulesets>
+						<ruleset>${cds_pmd_ruleset}</ruleset>
+					</rulesets>
+					<targetJdk>1.7</targetJdk>
+					<aggregate>true</aggregate>
+					<includeTests>false</includeTests>
+					<sourceEncoding>utf-8</sourceEncoding>
+					<failOnViolation>false</failOnViolation>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<modules>
+		<module>ERICTAFbsim_CXP9030600</module>
+		<module>test-pom</module>
+	</modules>
+
+	<scm>
+		<developerConnection>scm:git:[fetch=]ssh://gerrit.ericsson.se:29418/OSS/${project.groupId}/bsim-taf-assembly[push=]ssh://gerrit.ericsson.se:29418/OSS/${project.groupId}/bsim-taf-assembly</developerConnection>
+		<connection>${ericsson.scm.url}</connection>
+		<tag>HEAD</tag>
+	</scm>
+
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.ericsson.oss.taf</groupId>
+				<artifactId>taf-oss-operators-bom</artifactId>
+				<version>${taf_oss_operators_version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+</project>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bulkCmConfigDataFile xmlns:un="utranNrm.xsd" xmlns:xn="genericNrm.xsd"
+    xmlns:gn="geranNrm.xsd" xmlns="configData.xsd" xmlns:es="%Ericsson Specific Attribute%.xsd">
+    <fileHeader fileFormatVersion="32.615 V4.5" vendorName="Ericsson"/>
+    <configData dnPrefix="Undefined">
+        <xn:SubNetwork id="%ONRM ROOT MO%">
+            <xn:SubNetwork id="%SubNetwork Group%">
+                <xn:MeContext id="%Node Name%">
+                    <xn:ManagedElement id="1">
+                        <xn:VsDataContainer id="1">
+                            <xn:attributes>
+                                <xn:vsDataType>vsDataIpSystem</xn:vsDataType>
+                                <xn:vsDataFormatVersion>%Ericsson Specific Attribute%</xn:vsDataFormatVersion>
+                                <es:vsDataIpSystem/>
+                            </xn:attributes>
+                                                <xn:VsDataContainer id="1" modifier="update">
+                                                        <xn:attributes>
+                                                                <xn:vsDataType>vsDataIpAccessSctp</xn:vsDataType>
+                                                                <xn:vsDataFormatVersion>%Ericsson Specific Attribute%</xn:vsDataFormatVersion>
+                                                                <es:vsDataIpAccessSctp>
+                                                                                <es:ipAccessHostEtRef2>SubNetwork=%ONRM ROOT MO%,SubNetwork=%SubNetwork Group%,MeContext=%Node Name%,ManagedElement=1,vsDataIpSystem=1,vsDataIpAccessHostEt=1</es:ipAccessHostEtRef2>
+                                                                </es:vsDataIpAccessSctp>
+                                                        </xn:attributes>
+                                                </xn:VsDataContainer>
+                        </xn:VsDataContainer>
+
+
+                        <xn:VsDataContainer id="1">
+                            <xn:attributes>
+                                <xn:vsDataType>vsDataTransportNetwork</xn:vsDataType>
+                                <xn:vsDataFormatVersion>%Ericsson Specific Attribute%</xn:vsDataFormatVersion>
+                                <es:vsDataTransportNetwork/>
+                            </xn:attributes>
+                            <xn:VsDataContainer id="1" modifier="update">
+                                <xn:attributes>
+                                    <xn:vsDataType>vsDataSctp</xn:vsDataType>
+                                    <xn:vsDataFormatVersion>%Ericsson Specific Attribute%</xn:vsDataFormatVersion>
+                                    <es:vsDataSctp>
+                                    <es:userLabel></es:userLabel>
+                                    <es:ipAccessHostGpbId></es:ipAccessHostGpbId>
+                                    <es:minimumRto>10</es:minimumRto>
+                                    <es:maximumRto>40</es:maximumRto>
+                                    <es:initialRto>20</es:initialRto>
+                                    <es:rtoAlphaIndex>4</es:rtoAlphaIndex>
+                                    <es:rtoBetaIndex>4</es:rtoBetaIndex>
+                                    <es:validCookieLife>20</es:validCookieLife>
+                                    <es:allowedIncrementCookieLife>30</es:allowedIncrementCookieLife>
+                                    <es:keyChangePeriod>30</es:keyChangePeriod>
+                                    <es:associationMaxRtx>10</es:associationMaxRtx>
+                                    <es:pathMaxRtx>6</es:pathMaxRtx>
+                                    <es:maxInitialRtrAtt>10</es:maxInitialRtrAtt>
+                                    <es:maxShutDownRtrAtt>10</es:maxShutDownRtrAtt>
+                                    <es:heartbeatInterval>1</es:heartbeatInterval>
+                                    <es:heartbeatStatus>true</es:heartbeatStatus>
+                                    <es:maxIncomingStream>100</es:maxIncomingStream>
+                                    <es:maxOutgoingStream>100</es:maxOutgoingStream>
+                                    <es:maxUserDataSize>556</es:maxUserDataSize>
+                                    <es:mBuffer>16</es:mBuffer>
+                                    <es:nThreshold>12</es:nThreshold>
+                                    <es:tSack>10</es:tSack>
+                                    <es:initialAdRecWin>16384</es:initialAdRecWin>
+                                    <es:intervalOobPkts>1000</es:intervalOobPkts>
+                                    <es:maxBurst>1000</es:maxBurst>
+                                    <es:nPercentage>50</es:nPercentage>
+                                    <es:bundlingActivated>1</es:bundlingActivated>
+                                    <es:bundlingTimer>100</es:bundlingTimer>
+                                    <es:heartbeatMaxBurst>0</es:heartbeatMaxBurst>
+                                    <es:heartbeatPathProbingInterval>500</es:heartbeatPathProbingInterval>
+                                    <es:pathSelection>0</es:pathSelection>
+                                    </es:vsDataSctp>
+                                </xn:attributes>
+                            </xn:VsDataContainer>
+                        </xn:VsDataContainer>
+
+                    </xn:ManagedElement>
+                </xn:MeContext>
+            </xn:SubNetwork>
+        </xn:SubNetwork>
+    </configData>
+    <fileFooter dateTime="2010-09-14T11:24:14Z"/>
+</bulkCmConfigDataFile>

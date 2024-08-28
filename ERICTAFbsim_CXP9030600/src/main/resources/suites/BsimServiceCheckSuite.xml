@@ -1,0 +1,7 @@
+<suite name="BSIM Service Check Suite">
+	<test name="BSIM Service Check">
+		<classes>
+			<class name="com.ericsson.oss.bsim.test.cases.BsimServiceCheck" />
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,7 @@
+<suite name="BSIM Temp Suite">
+        <test name="BSIM Temp Test">
+                <classes>                     
+                        <class name="com.ericsson.oss.bsim.test.cases.BsimCheckOsgiContainer" />
+                </classes>
+        </test>
+</suite>

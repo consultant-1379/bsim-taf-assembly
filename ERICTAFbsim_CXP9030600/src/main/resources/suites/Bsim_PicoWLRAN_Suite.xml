@@ -1,0 +1,9 @@
+<suite name="BSIM Pico WLRAN Suite">
+	<test name="BSIM Pico WLRAN Test">
+		<classes>
+			<class name="com.ericsson.oss.bsim.test.cases.PrepareBsimTest" />
+			<class name="com.ericsson.oss.bsim.robustness.precheck.PreCheckOfficialPackages" />
+			<class name="com.ericsson.oss.bsim.test.cases.BsimWLRANBatch" />
+		</classes>
+	</test>
+</suite>

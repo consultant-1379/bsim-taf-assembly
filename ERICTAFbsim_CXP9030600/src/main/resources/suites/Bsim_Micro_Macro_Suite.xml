@@ -1,0 +1,10 @@
+<suite name="BSIM Micro Macro Suite">
+	<test name="BSIM Add MICRO/Macro Nodes">
+		 <classes>
+                         <class name="com.ericsson.oss.bsim.test.cases.PrepareBsimTest" />
+			 <class name="com.ericsson.oss.bsim.robustness.precheck.PreCheckOfficialPackages" />  
+		 	<class name="com.ericsson.oss.bsim.test.cases.BsimMicroMacroLTE" />
+		 </classes>
+	</test>
+
+</suite>

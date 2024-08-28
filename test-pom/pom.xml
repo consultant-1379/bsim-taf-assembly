@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.ericsson.oss.bsim</groupId>
+		<artifactId>bsim-taf-project</artifactId>
+        <version>1.0.1302-SNAPSHOT</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+
+	<artifactId>test-pom</artifactId>
+	<packaging>pom</packaging>
+
+	<properties>
+		<taf_testware>true</taf_testware>
+	</properties>
+
+
+	<dependencies>
+		<dependency>
+			<groupId>com.ericsson.oss.bsim</groupId>
+			<artifactId>ERICTAFbsim_CXP9030600</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>com.ericsson.cifwk.taf</groupId>
+				<artifactId>taf-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<goals>
+							<goal>test</goal>
+						</goals>
+						<configuration>
+							<copyDependencies>
+								<includeScope>runtime</includeScope>
+								<copyPom>false</copyPom>
+								<includeGroupIds>org.codehaus.groovy,com.ericsson.cifwk,com.ericsson.oss.bsim</includeGroupIds>
+								<includeTypes>jar</includeTypes>
+								<excludeArtifactIds>taf-ui-selenium-drivers</excludeArtifactIds>
+								<outputDirectory>${project.build.directory}/lib</outputDirectory>
+								<overWriteReleases>false</overWriteReleases>
+								<overWriteSnapshots>true</overWriteSnapshots>
+								<overWriteIfNewer>true</overWriteIfNewer>
+								<stripClassifier>true</stripClassifier>
+								<stripVersion>true</stripVersion>
+							</copyDependencies>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+	<profiles>
+		<profile>
+			<id>maven305</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<reporting>
+				<excludeDefaults>true</excludeDefaults>
+				<plugins>
+					<plugin>
+						<groupId>com.ericsson.cifwk.taf</groupId>
+						<artifactId>taf-allure-old-maven-plugin</artifactId>
+					</plugin>
+				</plugins>
+			</reporting>
+		</profile>
+	</profiles>
+</project>

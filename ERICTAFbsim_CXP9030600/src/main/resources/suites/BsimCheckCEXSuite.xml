@@ -1,0 +1,7 @@
+<suite name="BSIM Check CEX Suite">
+        <test name="BSIM Check CEX Test">
+                <classes>                     
+                        <class name="com.ericsson.oss.bsim.test.cases.BsimCheckOsgiContainer" />
+                </classes>
+        </test>
+</suite>

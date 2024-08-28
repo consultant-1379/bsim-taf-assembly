@@ -1,0 +1,15 @@
+ [ req ]
+ distinguished_name     = req_distinguished_name
+ default_md             = sha1
+ req_extensions         = v3_ca
+ prompt                 = no
+
+ [ req_distinguished_name ]
+ C                      = IE
+ O                      = Ericsson
+ OU                     = PDU OSS
+ CN                     = Epic_Netsim
+
+ [ v3_ca ]
+
+ keyUsage=digitalSignature, keyEncipherment, keyAgreement

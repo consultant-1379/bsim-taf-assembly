@@ -1,0 +1,9 @@
+<suite name="BSIM Pico LRAN Suite">
+	<test name="BSIM Pico LRAN Test">
+		<classes>
+			<class name="com.ericsson.oss.bsim.test.cases.PrepareBsimTest" />
+			<class name="com.ericsson.oss.bsim.robustness.precheck.PreCheckOfficialPackages" />
+			<class name="com.ericsson.oss.bsim.test.cases.BsimLRANBatch" />
+		</classes>
+	</test>
+</suite>

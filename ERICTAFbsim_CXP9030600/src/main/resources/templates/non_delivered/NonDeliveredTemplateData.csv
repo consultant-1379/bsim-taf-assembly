@@ -1,0 +1,8 @@
+templateName,templateDomain,templateType,templateDesc
+RNBulkCMExample_PostLTE,LRAN,PostInstallBulkCM,RNBulkCMExample_PostLTE  desc
+SiteBasic_WCDMA,SMRS,SiteBasicWRAN,SiteBasic_WCDMA desc
+SiteEquipment_WCDMA,SMRS,RbsEquipmentWRAN,SiteEquipment_WCDMA desc
+WCDMA_RN_PostInstall_Template,WRAN,PostInstallBulkCM,WCDMA_RN_PostInstall_Template desc
+WCDMA_TN_Post_Install_Template,WRAN,PostInstallBulkCM,WCDMA_TN_Post_Install_Template desc
+TNBulkCMExample_PostLTE,LRAN,PostInstallBulkCM,TNBulkCMExample_PostLTE desc
+SiteInstallation,FileMgr,SiteInstall,SiteInstallation desc

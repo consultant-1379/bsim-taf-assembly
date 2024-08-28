@@ -1,0 +1,8 @@
+<suite name="BSIM Setup Suite" preserve-order="true">
+	<test name="BSIM Setup Test">
+		<classes>
+		<!--  Test  class created for  prerequisite setup on server -->
+			<class name="com.ericsson.oss.bsim.test.cases.BsimSetup" /> 
+		        </classes>
+	</test>
+</suite>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Prepared by: WMR XFT WASP 11/12/2014 for W15B -->
+<!-- 
+ OAM Access template file for mRBS 6501.
+ -->
+
+<!DOCTYPE SiteBasic SYSTEM "OamAccess.dtd">
+
+<OssNodeProtocol> <Format revision="L"/>
+    <ConfigureOAMAccess>
+        <IPoverEthernet ethernetIpAddress="1" ethernetSubnetMask="255.255.255.0"/>
+        <IPoverGigabitEthernet defaultRouter0="1" etIPSynchSlot="1" syncIpAddress="1" syncSubnetMask="1" syncVid="1">
+            <IpSyncRef ntpServerIpAddress="1"/>
+            <OamIpHost oamDefaultRouter0="1" oamIpAddress="1" oamSubnetMask="1" oamVid="1"/>
+            <GigaBitEthernet gigaBitEthernetPort="TNA"/>
+        </IPoverGigabitEthernet>
+        <Servers daylightSavingTime="YES" defaultDomainName="1" dhcpServerPrimaryIpAddress="1" dnsServerIpAddress="1" documentServerWebAddress="1" isDefaultDomainName="YES" localTimeZone="ECT" primaryNtpServerIpAddress="1" primaryNtpServiceActive="YES" secondaryNtpServerIpAddress="1" secondaryNtpServiceActive="YES" singleLogonServer="" ossCorbaNameServer="1" ossCorbaNameServerPort="1"/>
+        <StaticRouting>
+            <Route hopIpAddress="1" redistribute="NO" routeIpAddress="0.0.0.0" routeMetric="1" routeSubnetMask="0.0.0.0"/>
+        </StaticRouting>
+        <NetworkSynch synchPort="7" synchPriority="1" synchSlot="1"/>
+    </ConfigureOAMAccess>
+</OssNodeProtocol>

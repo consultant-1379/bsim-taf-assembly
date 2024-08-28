@@ -1,0 +1,9 @@
+<suite name="BSIM LTE Suite">
+        <test name="BSIM Add LTE Nodes">
+                <classes>  
+                		<class name="com.ericsson.oss.bsim.test.cases.PrepareBsimTest" />
+						<class name="com.ericsson.oss.bsim.robustness.precheck.PreCheckOfficialPackages" />                  
+                        <class name="com.ericsson.oss.bsim.test.cases.BsimLTE" />
+                </classes>
+        </test>
+</suite>

@@ -1,0 +1,13 @@
+<suite name="BSIM Prechecks Wcdma Suite">
+	<test name="BSIM Prechecks Wcdma Test">
+		<groups>
+			<run>
+				<include name="wcdma.precheck" />
+				<exclude name="broken" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.ericsson.oss.bsim.robustness.precheck" />
+		</packages>
+	</test>
+</suite>

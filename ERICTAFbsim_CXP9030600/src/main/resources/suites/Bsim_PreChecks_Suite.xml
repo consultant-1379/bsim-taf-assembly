@@ -1,0 +1,13 @@
+<suite name="BSIM Prechecks Suite">
+	<test name="BSIM Prechecks Test">
+		<groups>
+			<run>
+				<include name="common.precheck" />
+				<exclude name="broken" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.ericsson.oss.bsim.robustness.precheck" />
+		</packages>
+	</test>
+</suite>

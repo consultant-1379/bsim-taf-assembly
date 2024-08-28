@@ -1,0 +1,7 @@
+<suite name="BSIM Setup Suite" preserve-order="true">
+	<test name="BSIM Setup Test">
+		<classes>
+			<class name="com.ericsson.oss.bsim.test.cases.BsimSetup" /> 
+		        </classes>
+	</test>
+</suite>

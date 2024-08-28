@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bbf:BSIMBindFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bbf="http://www.ericsson.se/BsimBindFileXMLSchema" xsi:schemaLocation="http://www.ericsson.se/BsimBindFileXMLSchema BSIMBindFileSchema_week02.xsd">
+        <BSIMBindList filecreationtime="0">
+                <Bind number="0" bindtype="BATCH" uri="LRAN_CONFIG_002a_BATCH1" hardwareids="C0C2000000"/>
+        </BSIMBindList>
+</bbf:BSIMBindFile>

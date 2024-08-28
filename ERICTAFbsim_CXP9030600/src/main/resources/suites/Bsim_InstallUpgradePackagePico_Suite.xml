@@ -1,0 +1,8 @@
+<suite name="BSIM Install Upgrade Package for Pico Suite" preserve-order="true">
+	<test name="BSIM Install Upgrade Package Test">
+		<classes>
+			<class name="com.ericsson.oss.bsim.robustness.precheck.PreCheckOfficialPackages" />
+			<class name="com.ericsson.oss.bsim.test.cases.InstallUpgradePackagesPico" />
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,14 @@
+<suite name="BSIM Quick Feedback Suite">
+	<test name="BSIM Quick Feedback Test">
+		<classes>
+			<class name="com.ericsson.oss.bsim.robustness.precheck.PreCheckOfficialPackages" />
+			<class name="com.ericsson.oss.bsim.test.cases.BsimWCDMA" />
+			<class name="com.ericsson.oss.bsim.test.cases.BsimLTE" />
+<!-- 			<class name="com.ericsson.oss.bsim.test.cases.BsimMicroWCDMA" /> -->
+			<class name="com.ericsson.oss.bsim.test.cases.BsimMicroLTE" />
+			<!-- <class name="com.ericsson.oss.bsim.test.cases.BsimLRANBatch" /> -->
+			<!-- <class name="com.ericsson.oss.bsim.test.cases.BsimWRANBatch" /> -->
+			<!-- <class name="com.ericsson.oss.bsim.test.cases.BsimCli" /> -->
+		</classes>
+	</test>
+</suite>

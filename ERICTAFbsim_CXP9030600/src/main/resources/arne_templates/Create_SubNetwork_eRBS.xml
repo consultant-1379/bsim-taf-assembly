@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Model SYSTEM "/opt/ericsson/arne/etc/arne12_2.dtd">
+<Model version="1" importVersion="12.2">
+   <Create>
+      <SubNetwork userLabel="eRBS" networkType="eRBS"> </SubNetwork>
+   </Create>
+</Model>

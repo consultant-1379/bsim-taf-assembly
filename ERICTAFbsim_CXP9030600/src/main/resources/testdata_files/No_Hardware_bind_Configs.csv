@@ -1,0 +1,3 @@
+NoHardwareBindConfig ID,TC Desc,Template Name,SaveToLocation,Integration OAM IP Address,Integration Outer IP Address
+NHWB_CONFIG_001,Site Install template with valid attributes,SiteInstallPicoExample_Trusted,/var/tmp/combindedOutputFile_NHWB_CONFIG_001.xml,1.1.1.1,1.1.1.1
+NHWB_CONFIG_002,Site Install template with valid attributes,SiteInstallPicoExample_Trusted,/var/tmp/combindedOutputFile_NHWB_CONFIG_002.xml,1.1.1.2,

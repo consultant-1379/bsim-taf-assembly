@@ -1,0 +1,2 @@
+tcID,tcTitle,directory,command,output
+BSIM_CLI_221,BSIM CLI OSS-18004 - Expected FAIL : bsim.sh bind in valid /..any../ directory and invalid command,/opt/ericsson/,bsim.sh bind -h,Usage is: bsim bind <command>

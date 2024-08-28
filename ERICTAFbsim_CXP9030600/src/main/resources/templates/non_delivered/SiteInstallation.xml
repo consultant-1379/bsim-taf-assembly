@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ProductNumber  = 'CXC 173 3297/TBD'       R-State  = 'R1A'
+DocumentNumber = '3/006 91-CSH 103 22'
+Node version: M14B
+
+File    : SiteInstallation.xml
+Purpose : Example file for Site Installation File
+
+Modified: February 28 2014
+-->
+
+<RbsSiteInstallationFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SiteInstallation.xsd">
+	<Format revision="L"/>
+	<InstallationData logicalName="%Node Name%" vlanId="%vlan Id%" rbsIntegrationCode="%rbsIntegrationCode%">
+		<SmrsData address="%SMRS Data address%" summaryFilePath="%Summary File Path%"/>
+	</InstallationData>
+	<UntrustedNetworkTemporaryConfigurationData>
+		<OuterIpConfigurationData ipAddress="%Outer Ip Address%" subnetMask="%subnetMask%" defaultRouter0="%defaultRouter0%">
+			<OuterDnsServer ipAddress="%Outer Dns Server Address%"/>
+			<SecGW ipAddress="%Scurity Gateway%"/>
+		</OuterIpConfigurationData>
+		<InnerIpConfigurationData ipAddress="%Inner Ip Address%">
+			<InnerDnsServer ipAddress="%Inner Dns Server Address%"/>
+		</InnerIpConfigurationData>
+	</UntrustedNetworkTemporaryConfigurationData>
+</RbsSiteInstallationFile>
+

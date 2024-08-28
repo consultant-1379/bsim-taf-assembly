@@ -1,0 +1,13 @@
+<suite name="BSIM STCDB Suite">
+        <test name="BSIM Add 100 LTE WCDMA Nodes">
+                <classes>                     
+                        <class name="com.ericsson.oss.bsim.test.cases.PrepareBsimTest" />
+                        <class name="com.ericsson.oss.bsim.robustness.precheck.PreCheckOfficialPackages" />
+                       	<class name="com.ericsson.oss.bsim.test.cases.BsimWCDMA" />
+                        <class name="com.ericsson.oss.bsim.test.cases.BsimMicroWCDMA" />
+                        <class name="com.ericsson.oss.bsim.test.cases.BsimLTESTCDB" />
+                       <class name="com.ericsson.oss.bsim.test.cases.BsimMicroLTE" />
+                </classes>
+        </test>
+</suite>
+

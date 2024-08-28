@@ -1,0 +1,13 @@
+<suite name="BSIM Prechecks Lte Suite">
+	<test name="BSIM Prechecks Lte Test">
+		<groups>
+			<run>
+				<include name="lte.precheck" />
+				<exclude name="broken" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.ericsson.oss.bsim.robustness.precheck" />
+		</packages>
+	</test>
+</suite>

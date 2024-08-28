@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bulkCmConfigDataFile xmlns:es="%Ericsson Specific Attribute%.xsd" xmlns:un="utranNrm.xsd" xmlns:xn="genericNrm.xsd" xmlns:gn="geranNrm.xsd" xmlns="configData.xsd">
+	<fileHeader fileFormatVersion="32.615 V4.5" vendorName="Ericsson"/>
+	<configData dnPrefix="Undefined">
+		<xn:SubNetwork id="%ONRM ROOT MO%">
+			<xn:SubNetwork id="%RNC Name%">			
+				<xn:MeContext id="%Node Name%">
+					<xn:ManagedElement id="1">																																								
+					 <xn:VsDataContainer id="1">
+						<xn:attributes>
+							<xn:vsDataType>vsDataIpSystem</xn:vsDataType>
+							<xn:vsDataFormatVersion>%Ericsson Specific Attribute%</xn:vsDataFormatVersion>
+							<es:vsDataIpSystem/>
+						</xn:attributes>					
+							<xn:VsDataContainer id="1" modifier="update">
+								<xn:attributes>
+									<xn:vsDataType>vsDataIpAccessSctp</xn:vsDataType>
+									<xn:vsDataFormatVersion>%Ericsson Specific Attribute%</xn:vsDataFormatVersion>
+									<es:vsDataIpAccessSctp>
+										<es:ipAccessHostEtRef2>SubNetwork=%ONRM ROOT MO%,SubNetwork=%RNC Name%,MeContext=%Node Name%,ManagedElement=1,vsDataIpSystem=1,vsDataIpAccessHostEt=1</es:ipAccessHostEtRef2>
+									</es:vsDataIpAccessSctp>
+								</xn:attributes>
+							</xn:VsDataContainer>																					
+					</xn:VsDataContainer>	
+					
+					<xn:VsDataContainer id="1">
+							<xn:attributes>
+								<xn:vsDataType>vsDataTransportNetwork</xn:vsDataType>
+								<xn:vsDataFormatVersion>%Ericsson Specific Attribute%</xn:vsDataFormatVersion>
+								<es:vsDataTransportNetwork/>
+							</xn:attributes>
+							<xn:VsDataContainer id="1" modifier="update">
+								<xn:attributes>
+									<xn:vsDataType>vsDataSctp</xn:vsDataType>
+									<xn:vsDataFormatVersion>%Ericsson Specific Attribute%</xn:vsDataFormatVersion>
+									<es:vsDataSctp>
+										<es:minimumRto>8</es:minimumRto>
+										<es:maximumRto>20</es:maximumRto>
+										<es:initialRto>8</es:initialRto>
+										<es:rtoAlphaIndex>4</es:rtoAlphaIndex>
+										<es:rtoBetaIndex>4</es:rtoBetaIndex>
+										<es:validCookieLife>20</es:validCookieLife>
+										<es:allowedIncrementCookieLife>30</es:allowedIncrementCookieLife>
+										<es:keyChangePeriod>30</es:keyChangePeriod>
+										<es:associationMaxRtx>10</es:associationMaxRtx>
+										<es:pathMaxRtx>10</es:pathMaxRtx>
+										<es:maxInitialRtrAtt>10</es:maxInitialRtrAtt>
+										<es:maxShutDownRtrAtt>10</es:maxShutDownRtrAtt>
+										<es:heartbeatInterval>100</es:heartbeatInterval>
+										<es:heartbeatStatus>TRUE</es:heartbeatStatus>
+										<es:maxIncomingStream>100</es:maxIncomingStream>
+										<es:maxOutgoingStream>100</es:maxOutgoingStream>
+										<es:maxUserDataSize>556</es:maxUserDataSize>
+										<es:mBuffer>100</es:mBuffer>
+										<es:nThreshold>100</es:nThreshold>
+										<es:tSack>10</es:tSack>
+										<es:initialAdRecWin>16384</es:initialAdRecWin>
+										<es:intervalOobPkts>1000</es:intervalOobPkts>
+										<es:maxBurst>1000</es:maxBurst>
+										<es:nPercentage>50</es:nPercentage>
+										<es:bundlingActivated>1</es:bundlingActivated>
+										<es:bundlingTimer>100</es:bundlingTimer>
+									</es:vsDataSctp>
+								</xn:attributes>					
+						  </xn:VsDataContainer>		
+				</xn:VsDataContainer>
+				
+				<un:NodeBFunction id="1">
+					<un:attributes>
+						<un:userLabel>label</un:userLabel>
+						<un:nbapDcsp>60</un:nbapDcsp>
+					</un:attributes>								
+						<xn:VsDataContainer id="%IUB ID%" modifier="update">
+							<xn:attributes>
+								<xn:vsDataType>vsDataIub</xn:vsDataType>
+								<xn:vsDataFormatVersion>%Ericsson Specific Attribute%</xn:vsDataFormatVersion>
+								<es:vsDataIub>
+									<es:userLabel>iub_label_Post_Install</es:userLabel>																		
+								</es:vsDataIub>
+							</xn:attributes>
+							
+							<xn:VsDataContainer id="1" modifier="update">
+								<xn:attributes>
+									<xn:vsDataType>vsDataNbapCommon</xn:vsDataType>
+									<xn:vsDataFormatVersion>%Ericsson Specific Attribute%</xn:vsDataFormatVersion>
+								    <es:vsDataNbapCommon>
+									  <es:userLabel>Nbap_Common_Post_Install</es:userLabel>																		
+									</es:vsDataNbapCommon>
+								</xn:attributes>
+							</xn:VsDataContainer>
+							
+							<xn:VsDataContainer id="1" modifier="update">
+								<xn:attributes>
+									<xn:vsDataType>vsDataNbapDedicated</xn:vsDataType>
+										<xn:vsDataFormatVersion>%Ericsson Specific Attribute%</xn:vsDataFormatVersion>
+								        <es:vsDataNbapDedicated>
+									      <es:userLabel>Nbap_Dedicated_Post_Install</es:userLabel>																		
+									   </es:vsDataNbapDedicated>
+									</xn:attributes>
+								</xn:VsDataContainer>
+							</xn:VsDataContainer>
+						</un:NodeBFunction>
+					</xn:ManagedElement>
+				</xn:MeContext>	
+				
+				<xn:MeContext id="%RNC Name%">
+				  <xn:ManagedElement id="1">
+            		            <un:RncFunction id="1">
+        				    <un:IubLink id="%Node Name%_%IUB ID%" modifier="update">
+        						<un:attributes>
+        							<un:userLabel>%Node Name%</un:userLabel>
+        							<un:iubLinkNodeBFunction>SubNetwork=%ONRM ROOT MO%,SubNetwork=%RNC Name%,MeContext=%Node Name%,ManagedElement=1,NodeBFunction=1</un:iubLinkNodeBFunction>
+        						</un:attributes>
+        								<xn:VsDataContainer id="%Node Name%_%IUB ID%" modifier="update">
+        									<xn:attributes>
+        										<xn:vsDataType>vsDataIubLink</xn:vsDataType>
+        										<xn:vsDataFormatVersion>%Ericsson Specific Attribute%</xn:vsDataFormatVersion>
+        										<es:vsDataIubLink>
+        											<es:remoteCpIpAddress2>1.1.1.1</es:remoteCpIpAddress2>
+        										</es:vsDataIubLink>
+        									</xn:attributes>
+        							</xn:VsDataContainer>
+        					</un:IubLink>
+					  </un:RncFunction>
+					</xn:ManagedElement>
+				</xn:MeContext>
+			</xn:SubNetwork>
+		</xn:SubNetwork>
+	</configData>
+   <fileFooter dateTime="2010-12-05T14:42:36Z"/>
+</bulkCmConfigDataFile>

@@ -1,0 +1,2 @@
+tcID,tcTitle,TC Desc,batchCSVFile,batchConfigs,command,xmlFile,outputXmlFile,validationString,result
+BSIM_CLI_BULK_CREATE,Create Test,Create Test,Bsim_Cli_LRAN_Batch_Configs.csv,<LRAN_CONFIG_BULK20=2>,/opt/ericsson/nms_umts_bsim_cli/bin/bsim.sh bind -c batch file:///var/tmp/create_input.xml file:///var/tmp/create_output.xml,/var/tmp/create_input.xml,/var/tmp/create_output.xml,<Successful>,Successful

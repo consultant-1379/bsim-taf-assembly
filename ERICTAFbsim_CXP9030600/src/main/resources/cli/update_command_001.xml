@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bbf:BSIMBindFile xmlns:bbf="http://www.ericsson.se/BsimBindFileXMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ericsson.se/BsimBindFileXMLSchema file:///C:/Users/esnedro/Desktop/BSIMBindFileSchema_week04.xsd">
+<BSIMBindList filecreationtime="0">
+                        <Bind number="0" bindtype="NODE" uri="SubNetwork=ONRM_ROOT_MO_R,SubNetwork=eRBS,MeContext=LRAN_CONFIG_001_BATCH1_Node1" hardwareids="S1342529"/>
+                        <Bind number="1" bindtype="NODE" uri="SubNetwork=ONRM_ROOT_MO_R,SubNetwork=eRBS,MeContext=LRAN_CONFIG_001_BATCH1_Node2" hardwareids="S1149424"/>
+            </BSIMBindList>
+</bbf:BSIMBindFile>

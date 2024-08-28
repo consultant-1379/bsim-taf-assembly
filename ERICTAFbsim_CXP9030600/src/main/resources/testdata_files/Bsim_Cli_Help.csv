@@ -1,0 +1,6 @@
+tcID,tcTITLE,command,args,output
+OSS-77353,Test With Invalid Command,/opt/ericsson/nms_umts_bsim_cli/bin/bsim.sh,"bind -aaa	",Command execution error
+OSS-77354,Test With Invalid Command And No Minus Sign, /opt/ericsson/nms_umts_bsim_cli/bin/bsim.sh,bind reload,Command execution error
+OSS-77357,Test With Short Command, /opt/ericsson/nms_umts_bsim_cli/bin/bsim.sh,bind -h,Usage is: bsim bind
+OSS-77359,Test With Missing 'bind', /opt/ericsson/nms_umts_bsim_cli/bin/bsim.sh,"-h",Usage is: bsim bind
+OSS-77360,Test With Long Command, /opt/ericsson/nms_umts_bsim_cli/bin/bsim.sh,bind --help,Usage is: bsim bind

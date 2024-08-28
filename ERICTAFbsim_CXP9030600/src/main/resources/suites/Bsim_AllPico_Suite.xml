@@ -1,0 +1,11 @@
+<suite name="BSIM All Pico Test">
+	<test name="BSIM All Pico Test">
+		<classes>
+			<class name="com.ericsson.oss.bsim.test.cases.PrepareBsimTest" />
+			<class name="com.ericsson.oss.bsim.robustness.precheck.PreCheckOfficialPackages" />
+			<class name="com.ericsson.oss.bsim.test.cases.BsimLRANBatch" />
+ 			<class name="com.ericsson.oss.bsim.test.cases.BsimWRANBatchE2E" />
+			<class name="com.ericsson.oss.bsim.test.cases.BsimCLIUseCases" />
+		</classes>
+	</test>
+</suite>

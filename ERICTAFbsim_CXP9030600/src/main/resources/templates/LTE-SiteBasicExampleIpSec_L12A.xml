@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SiteBasicTemplate templateName="SiteBasicExampleIpSec_L12A">
+                <SubstitutionAttribute name="FTP Service" value="SubNetwork=ONRM_ROOT_MO,FtpServer=SMRSSLAVE-LRAN-nedssv4,FtpService=aiflran"/>
+                <SubstitutionAttribute name="ipAddressOaMInner" value="4.4.4.4"/>
+                <SubstitutionAttribute name="ipAddressOuter" value="4.4.4.4"/>
+                <SubstitutionAttribute name="ipAddressInner" value="4.4.4.4"/>
+                <SubstitutionAttribute name="ipAddressOaMOuter" value="4.4.4.4"/>
+                <SubstitutionAttribute name="peerIpAddress" value="4.4.4.4"/>
+                <SubstitutionAttribute name="peerOaMIpAddress" value="4.4.4.4"/>
+</SiteBasicTemplate>
+     

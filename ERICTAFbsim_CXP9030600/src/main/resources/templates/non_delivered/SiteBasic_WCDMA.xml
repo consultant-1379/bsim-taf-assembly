@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE SiteBasic SYSTEM "OamAccess.dtd">
+<!-- Prepared by x. -->
+<!--  O&M Access Configuration for RBS72 at RAN I&V when testing AIF. Apr 2010 -->
+<SiteBasic>
+	<Format revision="E"/>
+	<ConfigureOAMAccess>
+		<IPoverEthernet ethernetIpAddress="169.254.1.1" ethernetSubnetMask="255.255.0.0"/>
+		<IPoverGigabitEthernet syncVid="4079" syncSubnetMask="255.255.254.0" syncIpAddress="10.2.223.72" etIPSynchSlot="1" defaultRouter0="10.2.222.1">
+			<IpSyncRef ntpServerIpAddress="10.2.222.30"/>
+			<OamIpHost oamIpAddress="137.58.152.72" oamSubnetMask="255.255.254.0" oamDefaultRouter0="137.58.152.1" oamVid="2912" />
+		</IPoverGigabitEthernet>
+		<Servers isDefaultDomainName="YES" defaultDomainName="stp.ran.ki.sw.ericsson.se" documentServerWebAddress="http://alex.wilma.ki.sw.ericsson.se" dnsServerIpAddress="172.31.92.2" dhcpServerPrimaryIpAddress="10.4.23.10" singleLogonServer="https://10.4.23.10:8443/ericsson/servlet/sls,https://10.4.23.11:8443/ericsson/servlet/sls" primaryNtpServerIpAddress="137.58.214.3" primaryNtpServiceActive="YES" secondaryNtpServerIpAddress="137.58.214.4" secondaryNtpServiceActive="YES" localTimeZone="ECT" daylightSavingTime="YES"/>
+		
+		<StaticRouting>
+			<Route routeIpAddress="0.0.0.0" routeSubnetMask="0.0.0.0" hopIpAddress="137.58.152.1" routeMetric="100" redistribute="NO"/>
+		</StaticRouting>
+		
+		<NetworkSynch synchSlot="1" synchPort="7" synchPriority="1"/>
+		
+	</ConfigureOAMAccess>
+</SiteBasic>
+
+
+		<!-- 	13/1551-LZA 701 6003 Uen L File Descriptions for Site Configuration	
+		synchPort:	RBS with DU			
+		For RBS with DUW: 1-9 
+		1 to 4 means the PhysPathTerms
+		5 to 6 means the TuSynchRef (2)
+		7 to 8 means IpSynchRef (synchPort represents the RDN ID of an IpSynchRef) 
+		9 means STM-1 (Os155SpiTtp)	-->

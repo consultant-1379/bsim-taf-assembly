@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!-- __________________________________________________________________________________________________ -->
+<!-- -->
+<!-- XML source file for : WCDMA node/s -->
+<!-- BSIMAUTO-510 : XML Source file (All BSIM tabs) - XML Parser for Template's substitution attributes -->
+<!-- __________________________________________________________________________________________________ -->
+<!--  -->
+<!-- TN Templates  :  wcdmatnbulkcmtemplatefile, wcdmarnctnbulkcmexample-->
+<!-- RN Templates  :  wcdmarnctnbulkcmexample-->
+<!-- AI Tab        :  -->
+<!-- __________________________________________________________________________________________________ -->
+<!--  -->
+<!-- Revision History -->
+<!-- 11-Nov-2013 epaudwa First draft containing template substitution attributes for TN, RN and AI tabs -->
+<!-- __________________________________________________________________________________________________ -->
+
+<Tab tabName="ALL">
+
+<!--  WCDMA TRANSPORT TEMPLATES -->
+	<!-- WCDMA TN Template : "wcdmatnbulkcmtemplatefile" -->
+	<Template templateName="wcdmatnbulkcmtemplatefile">
+		<SubstitutionAttribute>
+			<keyName>IUB ID</keyName>
+			<keyValue>1</keyValue>
+		</SubstitutionAttribute>
+		<SubstitutionAttribute>
+			<keyName>rbsId</keyName>
+			<keyValue>1</keyValue>
+		</SubstitutionAttribute>
+		<SubstitutionAttribute>
+			<keyName>remoteCpIpAddress1</keyName>
+			<keyValue>88.88.88.88</keyValue>
+		</SubstitutionAttribute>
+	</Template>
+
+	<!-- WCDMA TN Template : "wcdmarnctnbulkcmexample" -->
+	<Template templateName="wcdmarnctnbulkcmexample">
+		<SubstitutionAttribute>
+			<keyName>IUB ID</keyName>
+			<keyValue>1</keyValue>
+		</SubstitutionAttribute>
+		<SubstitutionAttribute>
+			<keyName>rbsId</keyName>
+			<keyValue>1</keyValue>
+		</SubstitutionAttribute>
+		<SubstitutionAttribute>
+			<keyName>remoteCpIpAddress1</keyName>
+			<keyValue>88.88.88.88</keyValue>
+		</SubstitutionAttribute>
+	</Template>
+
+<!--  WCDMA RADIO TEMPLATES -->
+	<!-- WCDMA RN Template : "wcdmarnctnbulkcmexample" -->
+	<Template templateName="wcdmarnctnbulkcmexample">
+		<SubstitutionAttribute>
+			<keyName>Cell 1: localCellId</keyName>
+			<keyValue>1</keyValue>
+		</SubstitutionAttribute>
+		<SubstitutionAttribute>
+			<keyName>Cell 1: uarfcnUl</keyName>
+			<keyValue>1</keyValue>
+		</SubstitutionAttribute>
+		<SubstitutionAttribute>
+			<keyName>Cell 1: uarfcnDl</keyName>
+			<keyValue>1</keyValue>
+		</SubstitutionAttribute>
+		<SubstitutionAttribute>
+			<keyName>Cell 1: primaryScramblingCode</keyName>
+			<keyValue>1</keyValue>
+		</SubstitutionAttribute>
+		<SubstitutionAttribute>
+			<keyName>Cell 1: cId</keyName>
+			<keyValue>1</keyValue>
+		</SubstitutionAttribute>
+		<SubstitutionAttribute>
+			<keyName>Cell 1: User Label</keyName>
+			<keyValue>1</keyValue>
+		</SubstitutionAttribute>
+		<SubstitutionAttribute>
+			<keyName>Cell 1: lac</keyName>
+			<keyValue>1</keyValue>
+		</SubstitutionAttribute>
+		<SubstitutionAttribute>
+			<keyName>Cell 1: sac</keyName>
+			<keyValue>1</keyValue>
+		</SubstitutionAttribute>
+		<SubstitutionAttribute>
+			<keyName>IUB ID</keyName>
+			<keyValue>1</keyValue>
+		</SubstitutionAttribute>
+		<SubstitutionAttribute>
+			<keyName>Cell 1: tCell</keyName>
+			<keyValue>1</keyValue>
+		</SubstitutionAttribute>
+		<SubstitutionAttribute>
+			<keyName>Cell 1: sib1PlmnScopeValueTag</keyName>
+			<keyValue>1</keyValue>
+		</SubstitutionAttribute>
+	</Template>
+
+	<!-- WCDMA RN Template : "1cellwcdmarnbulkcmexample" -->
+	<Template templateName="1cellwcdmarnbulkcmexample">
+		<SubstitutionAttribute>
+			<keyName>Cell 1: localCellId</keyName>
+			<keyValue>1</keyValue>
+		</SubstitutionAttribute>
+		<SubstitutionAttribute>
+			<keyName>Cell 1: uarfcnUl</keyName>
+			<keyValue>1</keyValue>
+		</SubstitutionAttribute>
+		<SubstitutionAttribute>
+			<keyName>Cell 1: uarfcnDl</keyName>
+			<keyValue>1</keyValue>
+		</SubstitutionAttribute>
+		<SubstitutionAttribute>
+			<keyName>Cell 1: primaryScramblingCode</keyName>
+			<keyValue>1</keyValue>
+		</SubstitutionAttribute>
+		<SubstitutionAttribute>
+			<keyName>Cell 1: cId</keyName>
+			<keyValue>1</keyValue>
+		</SubstitutionAttribute>
+		<SubstitutionAttribute>
+			<keyName>Cell 1: User Label</keyName>
+			<keyValue>1</keyValue>
+		</SubstitutionAttribute>
+		<SubstitutionAttribute>
+			<keyName>Cell 1: lac</keyName>
+			<keyValue>1</keyValue>
+		</SubstitutionAttribute>
+		<SubstitutionAttribute>
+			<keyName>Cell 1: sac</keyName>
+			<keyValue>1</keyValue>
+		</SubstitutionAttribute>
+		<SubstitutionAttribute>
+			<keyName>IUB ID</keyName>
+			<keyValue>1</keyValue>
+		</SubstitutionAttribute>
+		<SubstitutionAttribute>
+			<keyName>Cell 1: tCell</keyName>
+			<keyValue>1</keyValue>
+		</SubstitutionAttribute>
+		<SubstitutionAttribute>
+			<keyName>Cell 1: sib1PlmnScopeValueTag</keyName>
+			<keyValue>1</keyValue>
+		</SubstitutionAttribute>
+	</Template>
+
+<!--  WCDMA AUTO-INTEGRATION TEMPLATES -->
+
+</Tab>
+<!-- End of file -->

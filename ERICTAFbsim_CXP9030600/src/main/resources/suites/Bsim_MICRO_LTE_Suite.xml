@@ -1,0 +1,9 @@
+<suite name="BSIM Add MICRO LTE Suite">
+        <test name="BSIM Add MICRO LTE Nodes">
+                <classes>    
+                		<class name="com.ericsson.oss.bsim.test.cases.PrepareBsimTest" />
+						<class name="com.ericsson.oss.bsim.robustness.precheck.PreCheckOfficialPackages" />              
+                        <class name="com.ericsson.oss.bsim.test.cases.BsimMicroLTE" />
+                </classes>
+        </test>
+</suite>

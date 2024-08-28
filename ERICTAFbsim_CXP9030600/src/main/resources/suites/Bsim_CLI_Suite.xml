@@ -1,0 +1,8 @@
+<suite name="BSIM Cli Suite">
+	<test name="BSIM Cli Test">
+		<classes>
+			<class name="com.ericsson.oss.bsim.test.cases.BsimCli" />
+			<class name="com.ericsson.oss.bsim.test.cases.BsimCLIUseCases" />
+		</classes>
+	</test>
+</suite>

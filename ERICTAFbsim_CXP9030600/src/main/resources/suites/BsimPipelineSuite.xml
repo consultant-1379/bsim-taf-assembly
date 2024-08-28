@@ -1,0 +1,11 @@
+<suite name="BSIM All Suite">
+	<test name="BSIM All Test">
+		<classes>
+			<class name="com.ericsson.oss.bsim.test.cases.BsimCli" />                 
+			<class name="com.ericsson.oss.bsim.test.cases.BsimWRANBatch" />
+			<class name="com.ericsson.oss.bsim.test.cases.BsimLRANBatch" />
+			<class name="com.ericsson.oss.bsim.test.cases.BsimLTE" />                                         
+            <class name="com.ericsson.oss.bsim.test.cases.BsimWCDMA" />
+		</classes>
+	</test>
+</suite>

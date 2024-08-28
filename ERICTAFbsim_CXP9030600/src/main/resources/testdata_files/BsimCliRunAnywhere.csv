@@ -1,0 +1,6 @@
+tcID,tcTitle,directory,command,output
+BSIM_CLI_201,BSIM CLI OSS-18004 - Expected PASS : bsim bind works in /bin/ directory,/opt/ericsson/nms_umts_bsim_cli/bin/,bsim bind --help,Usage is: bsim bind <command>
+BSIM_CLI_202,BSIM CLI OSS-18004 - Expected PASS : bsim bind works in /..any../ directory,/opt/ericsson/,bsim bind -h,Usage is: bsim bind <command>
+BSIM_CLI_203,BSIM CLI OSS-18004 - Expected PASS : bsim.sh bind works in /bin/ directory,/opt/ericsson/nms_umts_bsim_cli/bin/,./bsim.sh bind -h,Usage is: bsim bind <command>
+BSIM_CLI_204,BSIM CLI OSS-18004 - Expected FAIL : bsim bind runs in /any/ directory but command fails as invalid usage "-help" but valid output error message checked for,/home/,bsim bind -help,Error: Command execution error
+BSIM_CLI_205,BSIM CLI OSS-18004 - Expected FAIL : bsim.sh bind fails in /..any../ directory but valid output error checked for,/opt/ericsson/,bsim.sh bind -h,command not found

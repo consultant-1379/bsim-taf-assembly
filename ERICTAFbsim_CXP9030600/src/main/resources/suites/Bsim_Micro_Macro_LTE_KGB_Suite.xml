@@ -1,0 +1,12 @@
+ <suite name="BSIM Micro Macro Suite LTE KGB">
+	<test name="BSIM Micro Macro Suite LTE KGB">
+		 <classes>
+                      <class name="com.ericsson.oss.bsim.test.cases.PrepareBsimTest" />
+			 <class name="com.ericsson.oss.bsim.robustness.precheck.PreCheckOfficialPackages" />
+			  <class name="com.ericsson.oss.bsim.test.cases.BsimMicroMacroLTE_KGB" />
+		 	
+		 </classes>
+	</test>
+
+</suite>
+ 

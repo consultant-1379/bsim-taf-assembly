@@ -1,0 +1,51 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+-
+<bbf:BSIMBindFile
+	xsi:schemaLocation="http://www.ericsson.se/BsimBindFileXMLSchema BSIMBindFileSchema_week02.xsd"
+	xmlns:bbf="http://www.ericsson.se/BsimBindFileXMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	-
+	<BSIMBindList filecreationtime="0">
+		<Bind hardwareids="C003B10309" uri="LRAN_CONFIG_003_BATCH1"
+			bindtype="BATCH" number="0" />
+		<!--,C002B001N1 -->
+		<Bind hardwareids="C003B10310" uri="LRAN_CONFIG_003_BATCH2"
+			bindtype="BATCH" number="1" />
+		<Bind hardwareids="C003B10311" uri="LRAN_CONFIG_003_BATCH3"
+			bindtype="BATCH" number="2" />
+		<Bind hardwareids="C003B10312" uri="LRAN_CONFIG_003_BATCH4"
+			bindtype="BATCH" number="3" />
+		<Bind hardwareids="C003B10313" uri="LRAN_CONFIG_003_BATCH5"
+			bindtype="BATCH" number="4" />
+		<Bind hardwareids="C003B10314" uri="LRAN_CONFIG_003_BATCH6"
+			bindtype="BATCH" number="5" />
+		<Bind hardwareids="C003B10315" uri="LRAN_CONFIG_003_BATCH7"
+			bindtype="BATCH" number="6" />
+		<Bind hardwareids="C003B10316" uri="LRAN_CONFIG_003_BATCH8"
+			bindtype="BATCH" number="7" />
+		<Bind hardwareids="C003B10317" uri="LRAN_CONFIG_003_BATCH9"
+			bindtype="BATCH" number="8" />
+		<Bind hardwareids="C003B10318" uri="LRAN_CONFIG_003_BATCH10"
+			bindtype="BATCH" number="9" />
+		<Bind hardwareids="C003B10319" uri="LRAN_CONFIG_003_BATCH11"
+			bindtype="BATCH" number="10" />
+		<Bind hardwareids="C003B10320" uri="LRAN_CONFIG_003_BATCH12"
+			bindtype="BATCH" number="11" />
+		<Bind hardwareids="C003B10321" uri="LRAN_CONFIG_003_BATCH13"
+			bindtype="BATCH" number="12" />
+		<Bind hardwareids="C003B10322" uri="LRAN_CONFIG_003_BATCH14"
+			bindtype="BATCH" number="13" />
+		<Bind hardwareids="C003B10323" uri="LRAN_CONFIG_003_BATCH15"
+			bindtype="BATCH" number="14" />
+		<Bind hardwareids="C003B10324" uri="LRAN_CONFIG_003_BATCH16"
+			bindtype="BATCH" number="15" />
+		<Bind hardwareids="C003B10325" uri="LRAN_CONFIG_003_BATCH17"
+			bindtype="BATCH" number="16" />
+		<Bind hardwareids="C003B10326" uri="LRAN_CONFIG_003_BATCH18"
+			bindtype="BATCH" number="17" />
+		<Bind hardwareids="C003B10327" uri="LRAN_CONFIG_003_BATCH19"
+			bindtype="BATCH" number="18" />
+		<Bind hardwareids="C003B10328" uri="LRAN_CONFIG_003_BATCH20"
+			bindtype="BATCH" number="19" />
+	</BSIMBindList>
+</bbf:BSIMBindFile>

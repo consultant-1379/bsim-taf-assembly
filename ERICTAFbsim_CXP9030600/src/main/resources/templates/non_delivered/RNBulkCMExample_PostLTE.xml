@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bulkCmConfigDataFile xmlns:un="utranNrm.xsd" xmlns:xn="genericNrm.xsd"
+    xmlns:gn="geranNrm.xsd" xmlns="configData.xsd" xmlns:es="%Ericsson Specific Attribute%.xsd">
+    <fileHeader fileFormatVersion="32.615 V4.5" vendorName="Ericsson"/>
+    <configData dnPrefix="Undefined">
+        <xn:SubNetwork id="%ONRM ROOT MO%">
+            <xn:SubNetwork id="%SubNetwork Group%">
+                <xn:MeContext id="%Node Name%">
+                    <xn:ManagedElement id="1">
+                        <xn:VsDataContainer id="1">
+                            <xn:attributes>
+                                <xn:vsDataType>vsDataENodeBFunction</xn:vsDataType>
+                                <xn:vsDataFormatVersion>%Ericsson Specific Attribute%</xn:vsDataFormatVersion>
+                                <es:vsDataENodeBFunction/>
+                            </xn:attributes>
+                            <xn:VsDataContainer id="EUtranCellFDD_1" modifier="update">
+                                <xn:attributes>
+                                    <xn:vsDataType>vsDataEUtranCellFDD</xn:vsDataType>
+                                    <xn:vsDataFormatVersion>%Ericsson Specific Attribute%</xn:vsDataFormatVersion>
+                                    <es:vsDataEUtranCellFDD>
+                                   <es:userLabel>1EUtranCellFDD_1</es:userLabel>
+                                    <es:tac>1</es:tac>
+                                    </es:vsDataEUtranCellFDD>
+                                </xn:attributes>
+                            </xn:VsDataContainer>
+
+                            <xn:VsDataContainer id="EUtranCellFDD_2" modifier="update">
+                                <xn:attributes>
+                                    <xn:vsDataType>vsDataEUtranCellFDD</xn:vsDataType>
+                                    <xn:vsDataFormatVersion>%Ericsson Specific Attribute%</xn:vsDataFormatVersion>
+                                    <es:vsDataEUtranCellFDD>
+                                <es:userLabel>2EUtranCellFDD_2</es:userLabel>
+                                    <es:tac>1</es:tac>
+                                    </es:vsDataEUtranCellFDD>
+                                </xn:attributes>
+                            </xn:VsDataContainer>
+
+                            <xn:VsDataContainer id="EUtranCellFDD_3" modifier="update">
+                                <xn:attributes>
+                                    <xn:vsDataType>vsDataEUtranCellFDD</xn:vsDataType>
+                                    <xn:vsDataFormatVersion>%Ericsson Specific Attribute%</xn:vsDataFormatVersion>
+                                    <es:vsDataEUtranCellFDD>
+                                <es:userLabel>3EUtranCellFDD_3</es:userLabel>
+                                    <es:tac>1</es:tac>
+                                    </es:vsDataEUtranCellFDD>
+                                </xn:attributes>
+                            </xn:VsDataContainer>
+                         </xn:VsDataContainer>
+                    </xn:ManagedElement>
+                </xn:MeContext>
+            </xn:SubNetwork>
+        </xn:SubNetwork>
+    </configData>
+    <fileFooter dateTime="2010-09-14T12:09:31Z"/>
+</bulkCmConfigDataFile>

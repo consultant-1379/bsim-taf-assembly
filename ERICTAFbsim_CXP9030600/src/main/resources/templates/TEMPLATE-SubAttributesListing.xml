@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!-- __________________________________________________________________________________________________ -->
+<!--  -->
+<!-- XML source file for : <what> node/s -->
+<!-- __________________________________________________________________________________________________ -->
+<!--  -->
+<!--  List templates included in this file -->
+<!-- __________________________________________________________________________________________________ -->
+<!--  -->
+<!-- Revision History -->
+<!-- <date> <signum> <comments> -->
+<!-- __________________________________________________________________________________________________ -->
+
+<Tab tabName="ALL">
+<!--  tabName attribute not used currently - may be ignore or leave at "ALL" -->
+
+	<!-- Template : <insert_actual_temmplate_name_here>-->
+	<Template templateName="<insert_actual_template_name_here>">
+		<SubstitutionAttribute>
+			<keyName>[insert_name_of_first_Substitution_Attribute_here]</keyName>
+			<keyValue>[insert_name_of_first_Substitution_Attribute_here]</keyValue>
+		</SubstitutionAttribute>
+	<!-- for every Substitution Attribute which applies, copy <SubstitutionAttribute> tag and update it 
+		with the name and value of the next Substitution Attribute -->
+	</Template>
+
+</Tab>
+<!-- End of file -->
+

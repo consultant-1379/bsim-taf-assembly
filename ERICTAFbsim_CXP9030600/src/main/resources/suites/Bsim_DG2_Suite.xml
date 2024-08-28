@@ -1,0 +1,9 @@
+<suite name="BSIM DG2 Suite">
+        <test name="BSIM Add DG2 Nodes">
+                <classes>      
+                		<class name="com.ericsson.oss.bsim.test.cases.PrepareBsimTest" />
+						<class name="com.ericsson.oss.bsim.robustness.precheck.PreCheckOfficialPackages" />                                       
+                        <class name="com.ericsson.oss.bsim.test.cases.BsimDG2" />
+                </classes>
+        </test>
+</suite>
